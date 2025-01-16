@@ -34,7 +34,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     private void Start()
     {
         // llama al metodo Connect desde el Start
-        Connect();
+       
         loadingPanel.SetActive(false);//desactivamos los elementos del panel de carga
         controlPanel.SetActive(true);//
     }
