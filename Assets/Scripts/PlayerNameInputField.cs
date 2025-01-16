@@ -19,7 +19,7 @@ public class PlayerNameInputField : MonoBehaviour
 
         if (_InputField)//para control de errores
         {
-            if (PlayerPrefs.HasKey(playerNameKey))//sirve para encontrar la key del nombre
+            if (PlayerPrefs.HasKey(playerNameKey))//sirve para encontrar la key del nombre//significa si player pref tiene la key
             {
 
                 defaultName = PlayerPrefs.GetString(playerNameKey);//traemos el nombre
@@ -39,7 +39,7 @@ public class PlayerNameInputField : MonoBehaviour
         if (string.IsNullOrEmpty(playerName))
         {
             PlayerPrefs.SetString(playerNameKey, playerName);//si el campo de inputfield  se ha rellenado con string y no esta vacio le estableces la key del diccionario
-            PhotonNetwork.NickName=playerName;
+            PhotonNetwork.NickName = playerName;
         }
     }
 }
