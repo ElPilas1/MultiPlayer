@@ -38,6 +38,8 @@ public class PlayerNameInputField : MonoBehaviour
         string playerName = _InputField.text;//el texto que ha puesto el user
         if (string.IsNullOrEmpty(playerName))
         {
-           PlayerPrefs.SetString(playerNameKey, playerName);//si el campo de inputfield  se ha rellenado con string y no esta vacio le estableces la key del diccionario
+            PlayerPrefs.SetString(playerNameKey, playerName);//si el campo de inputfield  se ha rellenado con string y no esta vacio le estableces la key del diccionario
+            PhotonNetwork.NickName=playerName;
         }
     }
+}
