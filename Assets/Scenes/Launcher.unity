@@ -1555,8 +1555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416e58e68cad8a444a1c33ca0bb3b3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPanel: {fileID: 0}
-  loadingPanel: {fileID: 0}
+  controlPanel: {fileID: 947675290}
+  loadingPanel: {fileID: 576781204}
   maxPlayersPerRoom: 4
 --- !u!4 &2082790380
 Transform:
